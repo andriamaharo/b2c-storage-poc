@@ -12,7 +12,7 @@ const nextConfig = (phase: string): NextConfig => ({
         headers: [{ key: "Access-Control-Allow-Origin", value: "*" }],
       },
       {
-        source: "/",
+        source: "/(passwordreset)?",
         headers: [
           {
             key: "Access-Control-Allow-Origin",
