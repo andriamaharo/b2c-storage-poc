@@ -1,33 +1,27 @@
 import type { NextConfig } from "next";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 
-const nextConfig: NextConfig = {
+const nextConfig = (phase: string): NextConfig => ({
+  assetPrefix: phase === PHASE_DEVELOPMENT_SERVER
+    ? undefined
+    : "https://b2c-storage-poc.netlify.app",
   async headers() {
     return [
+      {
+        source: "/_next/static/:path*",
+        headers: [{ key: "Access-Control-Allow-Origin", value: "*" }],
+      },
       {
         source: "/",
         headers: [
           {
-            key: "Cache-Control",
-            value: "private, no-store",
-          },
-          {
-            key: "Netlify-CDN-Cache-Control",
-            value: "no-store",
+            key: "Access-Control-Allow-Origin",
+            value: "https://klpretailerbeta.b2clogin.com",
           },
         ],
       },
-      {
-        source: "/",
-        has: [{ type: "header", key: "origin", value: "https://klpretailerbeta\\.b2clogin\\.com" }],
-        headers: [{ key: "Access-Control-Allow-Origin", value: "https://klpretailerbeta.b2clogin.com" }],
-      },
-      {
-        source: "/",
-        has: [{ type: "header", key: "origin", value: "https://qlf-uniform\\.klepierre\\.fr" }],
-        headers: [{ key: "Access-Control-Allow-Origin", value: "https://qlf-uniform.klepierre.fr" }],
-      },
     ];
   },
-};
+});
 
 export default nextConfig;

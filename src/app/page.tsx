@@ -6,7 +6,9 @@ import styles from "./page.module.css";
 
 type Step = "email" | "code" | "password" | "complete";
 
-const logo = "https://kortexcluster2.blob.core.windows.net/odysseum/common/images/logo.png";
+const assetHost = process.env.NODE_ENV === "production" ? "https://b2c-storage-poc.netlify.app" : "";
+const logo = `${assetHost}/images/odysseum-logo.png`;
+const background = `${assetHost}/images/odysseum-background.jpg`;
 const demoCode = "123456";
 
 export default function Home(): React.JSX.Element {
@@ -71,7 +73,7 @@ export default function Home(): React.JSX.Element {
   }
 
   return (
-    <div className={styles.page}>
+    <div className={styles.page} style={{ "--page-background": `url("${background}")` } as React.CSSProperties}>
       <header className={styles.header}>
         <a href="https://odysseum.klepierre.fr" aria-label="Odysseum - accueil">
           <img src={logo} alt="Odysseum" className={styles.logo} />

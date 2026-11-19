@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import localFont from "next/font/local";
+
+const roboto = localFont({
+  src: "./fonts/roboto-latin.woff2",
+  weight: "400 600",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Odysseum - modèles B2C",
@@ -9,12 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600&display=swap" rel="stylesheet" />
-      </head>
-      <body style={{ margin: 0 }}>{children}</body>
+      <body className={roboto.className} style={{ margin: 0 }}>{children}</body>
     </html>
   );
 }
