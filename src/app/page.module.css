@@ -70,7 +70,7 @@
   margin-top: 55px;
 }
 
-.form input {
+.form input:not([type="checkbox"]) {
   box-sizing: border-box;
   width: min(278px, 100%);
   height: 42px;
@@ -89,6 +89,7 @@
   border: 0;
   color: #fff;
   font: 600 14px Roboto, Arial, sans-serif;
+  cursor: pointer;
 }
 
 .form button span {
@@ -103,11 +104,53 @@
   background: #5e5e5e;
 }
 
+.form button:disabled {
+  cursor: not-allowed;
+}
+
+.form button:not(:disabled):hover {
+  background: #5e5e5e;
+}
+
+.form .secondary {
+  background: #555;
+}
+
+.form .toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.error {
+  margin: 0;
+  color: #b00;
+}
+
+.status {
+  margin: 0;
+  font-size: 13px;
+}
+
 .notice {
-  margin: 18px 0 0;
+  margin: 18px 0;
   color: #666;
   font-size: 12px;
   line-height: 16px;
+}
+
+button.back {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.form :focus-visible,
+.back:focus-visible {
+  outline: 2px solid #222;
+  outline-offset: 3px;
 }
 
 .srOnly {

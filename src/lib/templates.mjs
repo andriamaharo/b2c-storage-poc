@@ -14,6 +14,6 @@ export async function readTemplate(name) {
     throw new Error(`Unknown B2C template: ${name}`);
   }
 
-  const file = join(process.cwd(), "odysseum", "odysseum", ...templates[name]);
+  const file = join(process.cwd(), "odysseum", ...templates[name]);
   return readFile(file, "utf8");
 }

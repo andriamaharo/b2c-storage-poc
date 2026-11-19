@@ -4,9 +4,9 @@ Projet Next.js qui expose les modèles HTML existants pour les parcours Azure AD
 
 | Parcours | Route | Modèle source |
 | --- | --- | --- |
-| Connexion | `/login` | `odysseum/odysseum/login/custom-ui.html` |
-| Inscription | `/registration` | `odysseum/odysseum/registration/selfasserted.html` |
-| Réinitialisation du mot de passe | `/passwordreset` | `odysseum/odysseum/passwordreset/passwordreset.html` |
+| Connexion | `/login` | `odysseum/login/custom-ui.html` |
+| Inscription | `/registration` | `odysseum/registration/selfasserted.html` |
+| Réinitialisation du mot de passe | `/passwordreset` | `odysseum/passwordreset/passwordreset.html` |
 
 Les routes renvoient le HTML source sans hydratation React et autorisent les requêtes CORS. B2C charge le modèle et injecte le formulaire dans `#api` ; les routes ouvertes directement dans un navigateur ne constituent donc pas une authentification autonome.
 
@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-Ouvrir `http://localhost:3000` pour voir l'aperçu Next.js de la page de réinitialisation. Le formulaire de cet aperçu est désactivé : seul B2C peut envoyer et vérifier le code. Les routes de modèles ci-dessus restent accessibles directement. Exécuter `npm test` puis `npm run build` pour les vérifier. Les modèles sont intégrés au build : reconstruire après leur modification.
+Ouvrir `http://localhost:3000` pour voir la démonstration Next.js en TypeScript. Le code `123456` permet de parcourir les étapes simulées : aucun e-mail n'est envoyé et aucun mot de passe n'est enregistré ou modifié. N'utilisez pas de vraies informations. La validation et l'affichage du mot de passe sont recréés en React à partir des scripts historiques ; seul B2C effectue réellement la réinitialisation. Les routes de modèles ci-dessus restent inchangées. Exécuter `npm test` puis `npm run build` pour les vérifier. Les modèles sont intégrés au build : reconstruire après leur modification.
 
 ## Utilisation avec B2C
 
