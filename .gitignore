@@ -1,8 +1,8 @@
 node_modules/
-.next/
 out/
 .env*
 !.env.example
 npm-debug.log*
+*.tsbuildinfo
 
 odysseum/

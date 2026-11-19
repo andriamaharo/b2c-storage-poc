@@ -3,19 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "test": "node --test"
+    "dev": "npm run build && serve out",
+    "preview": "serve out",
+    "build": "tsx scripts/build-static.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test"
   },
   "dependencies": {
-    "next": "16.4.6",
     "react": "19.3.1",
     "react-dom": "19.3.1"
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
     "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "serve": "^14.2.8",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }

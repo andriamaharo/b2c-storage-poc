@@ -739,13 +739,13 @@ ul li.Password {
 	}
 }
 
-@media (max-width: 100%) {
+@media (max-width: 767px) {
     .unified_container .login-container .login-panel {
         margin-top: auto;
         margin-bottom: auto;
         height: 550px;
     }
-    .unified_container .login-container .login-panel .login-section-left {
+    .login-container-reset > .login-section-left {
         margin-top: 20px;
     }
     .unified_container .login-container .login-panel .login-section-left .companyName {
@@ -878,7 +878,6 @@ ul li.Password {
 		top: -125px;
 	}
 }
-
 
 
 

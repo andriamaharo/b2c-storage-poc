@@ -1,22 +1,25 @@
-# Page B2C Odysseum
+# Odysseum - React statique pour B2C
 
-Les routes `/` et `/passwordreset` affichent le même composant React TypeScript défini dans `src/app/page.tsx`. Il conserve la structure du modèle de réinitialisation, les classes CSS, les panneaux de succès masqués et la zone `#api` vide destinée à B2C. Aucun formulaire de démonstration ni ancien fichier HTML n'est chargé.
+Projet React et TypeScript sans Next.js ni JavaScript exécuté dans le navigateur. Le composant `src/PasswordReset.tsx` est rendu en HTML statique par `scripts/build-static.tsx` avec `react-dom/server`.
 
-Les anciennes routes HTML `/login` et `/registration` et leur chargeur ont été supprimés.
-
-## Développement
+## Commandes
 
 ```sh
 npm install
-npm run dev
-npm test
 npm run build
+npm run typecheck
+npm test
+npm run preview
 ```
 
-Les images et la feuille de style proviennent de `public`. En production, les ressources Next.js et les images utilisent `https://b2c-storage-poc.netlify.app`. En développement, les ressources de la page sont locales ; les URL dans la feuille de style publique restent absolues vers Netlify.
+`npm run dev` génère les pages puis démarre un serveur local. Après une modification, relancer le build et rafraîchir le navigateur ; il n'y a pas de rechargement automatique.
 
-## Utilisation avec B2C
+## Publication Netlify
 
-Le `LoadUri` peut conserver `https://b2c-storage-poc.netlify.app/passwordreset`. Cette route ne lit plus d'ancien fichier HTML. Les routes `/` et `/passwordreset` autorisent l'origine `https://klpretailerbeta.b2clogin.com`.
+`netlify.toml` publie `out`. Les URL `/` et `/passwordreset/` renvoient le même HTML statique, avec le conteneur vide `#api` présent dès la réponse, sans hydratation ni runtime React.
 
-Déployer les modifications sur Netlify avant de tester le parcours. La présence de `#api` ne garantit pas à elle seule la compatibilité des scripts ajoutés par Next.js avec B2C : valider l'injection du formulaire après déploiement. Les scripts historiques ne sont pas exécutés par le composant React.
+Les images, icônes, polices et CSS proviennent de `public` et sont référencés par des URL absolues vers `https://b2c-storage-poc.netlify.app`. L'aperçu local utilise également ce domaine pour ses ressources. Déployer les modifications pour les rendre disponibles.
+
+Le design et les stratégies XML du dossier `odysseum` sont conservés. B2C injecte son propre formulaire dans `#api` et gère la réinitialisation. Aucun formulaire simulé ni script historique n'est exécuté par le composant.
+
+La configuration CORS autorise la lecture des fichiers publics. Désactiver les injections de scripts Netlify (toolbar, snippets) et retirer tout plugin Next.js configuré explicitement dans l'interface Netlify. L'indicateur de désactivation du plugin est conservé dans `netlify.toml` pour les sites existants.

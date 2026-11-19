@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("https://b2c-storage-poc.netlify.app/fonts/roboto-latin.woff2") format("woff2");
+}

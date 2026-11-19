@@ -1,8 +1,4 @@
-const assetHost = process.env.NODE_ENV === "production"
-  ? "https://b2c-storage-poc.netlify.app"
-  : "";
-
-export default function Home(): React.JSX.Element {
+export default function PasswordReset({ assetHost }: { assetHost: string }): React.JSX.Element {
   return (
     <>
       <link rel="stylesheet" href={`${assetHost}/css/paswordreset.css`} />
