@@ -1,0 +1,823 @@
+header {
+    height: 56px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+	width: 100%;	
+}
+header img {
+	width: 172px;
+	max-height: 60px;
+	object-fit:contain;
+}
+
+
+
+body {
+    background: transparent!important;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+	position: relative;
+}
+
+.login-section-left,
+.login-section-right {
+	padding: 10px 15px 33px 15px;
+    background: white;
+    text-align: center;
+		width: 100%;
+    max-width: 478px;
+	letter-spacing: 0.1px;
+}
+/* .create { */
+	/* display: none; */
+/* } */
+.panel-left h2, .panel-right h2 {
+	margin-top: 11px;
+}
+.login-section-right {
+    margin-left: 15px;
+	min-height: 300px;
+}
+
+.login-section-left h2,
+.login-section-right h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 37px;
+    text-transform: uppercase;
+	line-height: 44px;
+}
+
+.login-section-left p,
+.login-section-right span {
+    font-weight: 500;
+    margin-top: 16px;
+	font-family: Roboto;
+    font-size: 18px;
+    line-height: 22px;
+}
+.login-section-right {
+	display: none;
+}
+
+.login-section-right span:last-child {
+	margin-top: 0;
+}
+
+.login-section-left p {
+	margin-top: 30px;
+    margin-bottom: 26px;
+	padding: 0 20px;
+}
+
+.login-section-right span:first-child {
+	margin-top: 35px;
+    margin-bottom: 20px;
+}
+.panel-right {
+	display: flex;
+	flex-direction: column;
+}
+.entry {
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.unified_container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.divider h2 {
+    text-align: center;
+	display: table;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 300;
+	font-family: Roboto;
+	width: 290px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 8px;
+}
+
+.divider h2:before {
+	right: 8%;
+}
+
+.divider h2:after, .divider h2:before{
+	
+	border-top: solid 1px #d7d7d7;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 1.5em;
+	left: 0;
+    width: 46%;
+}
+
+
+
+** Unified Signup Signin Page Styles **/ .unified_container .row .login-panel {
+    padding: 40px 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    background-color: white;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+
+
+.unified_container .login-container .login-panel .login-section-left {
+    width: auto;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.unified_container .login-container .login-panel .login-section-left .companyName {
+    font-size: 1.5em;
+    margin-bottom: 45px;
+}
+
+.unified_container .login-container .login-panel .login-section-left .companyLogo {
+    display: block;
+}
+
+.unified_container .login-container .login-panel .login-section-left img {
+    max-width: 100%;
+    width: auto;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+}
+
+.unified_container .login-container .login-panel .login-section-left h3 {
+    font-size: 1.5em;
+    display: none;
+}
+
+.unified_container .login-container .login-panel #api {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+.unified_container .login-container .login-panel #api .intro {
+    display: none;
+    text-align: left;
+}
+
+.unified_container .login-container .login-panel #api .intro h2 {
+    font-size: 20px;
+}
+
+.localAccount .divider {
+    display: none;
+}
+
+.unified_container .login-container .login-panel #api .localAccount {
+    top: 10px;
+    width: 100%;
+}
+.top-28 {
+	top: 28%!important;
+}
+.top-80 {
+	top: 80px!important;
+}
+.column-reverse {
+	display: flex!important;
+	flex-direction: column-reverse;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .intro h2 {
+    font-size: 20px;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .error {
+    color: #bb0000;
+    text-align: left;
+}
+.unified_container .login-container .login-panel #api .localAccount .error p{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 14px;
+	margin-top: 5px;
+	outline: none;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .entry .buttons {
+    margin: 14px 0 23px 0;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 991px) {
+    .BtnCenteredWithIcon {
+        transition: background .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+}
+
+@media (min-width: 991px) {
+    .BtnCenteredWithIcon {
+        display: flex;
+        min-width: 197px;
+    }
+}
+
+.ButtonWrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+@media (min-width: 991px) {
+    .ButtonWrapper {
+        padding-top: 0;
+        display: block;
+    }
+}
+
+.BtnCenteredWithIcon::before {
+    content: url('../../../../../Project/Klepierre/assets/icons/Play.svg');
+    display: block;
+    padding-right: 10px;
+    margin-top: -3px;
+}
+
+.BtnCenteredWithIcon:hover,
+.BtnCenteredWithIcon:focus,
+.BtnCenteredWithIcon:active {
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    background-position: left bottom;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .entry .buttons button, #attributeVerification .buttons button,
+.register-button , #signinCta {
+    display: inline-flex;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 14px 30px;
+    background: linear-gradient(to left, #000000 50%, #5e5e5e 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: none;
+    cursor: pointer;
+    height: inherit;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 1.2rem;
+    margin-left: 0px;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: inherit;
+    -moz-user-select: none;
+    -ms-touch-action: manipulation;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    color: #fff;
+    width: 63%;
+}
+
+.register-button, #signinCta, #attributeVerification .buttons button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .entry .buttons button::before, #attributeVerification .buttons button::before {
+    content: url('https://kortexciam2020.blob.core.windows.net/kortexciamcontainer/images/icone/Play.svg');
+    display: block;
+    padding-right: 10px;
+    margin-top: -3px;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .entry .buttons button:hover,
+.unified_container .login-container .login-panel #api .localAccount .entry .buttons button:focus,
+.unified_container .login-container .login-panel #api .localAccount .entry .buttons button:active,
+#attributeVerification .buttons button:hover,
+#attributeVerification .buttons button:focus,
+#attributeVerification .buttons button:active,
+#signinCta:hover,
+#signinCta:focus,
+#signinCta:active,
+.register-button:hover,
+.register-button:focus,
+.register-button:active {
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    background-position: left bottom;
+}
+.unified_container .login-container .login-panel #api .localAccount .create #createAccount:hover,
+.unified_container .login-container .login-panel #api .localAccount .create #createAccount:focus,
+.unified_container .login-container .login-panel #api .localAccount .create #createAccount:active {
+	outline: none;
+    color: #fff;
+    text-decoration: none;
+    background-position: left bottom;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .entry .buttons button:hover,
+.unified_container .login-container .login-panel #api .localAccount .create #createAccount:hover
+ {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #1662c7;
+    color: #fff;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item {
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    display: block;
+	position: relative; 
+}
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item input[type="checkbox"] {
+	display:none;
+	position: absolute;
+	top: 33%;
+	right: 20px;
+}
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item input[type="checkbox"] + label {
+	background:url('https://kortexciam2020.blob.core.windows.net/kortexciamcontainer/images/icone/visible-eye.svg') no-repeat 0 0;
+	background-size: 16px;
+	width: 18px;
+	position: absolute;
+	top: 40%;
+	right: 13px;
+	height: 14px;
+	padding: 4px 0 5px 15px;
+	display: inline-block;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	transition-duration: 0.3s;     
+}
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item input[type="checkbox"]:checked + label {
+	background:url('https://kortexciam2020.blob.core.windows.net/kortexciamcontainer/images/icone/not-visible-eye.svg') no-repeat;
+    background-size: 16px 16px;    
+}
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item label {
+    display: none;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item #signInName,
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item #logonIdentifier,
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item #password {
+    outline: none;
+    background-color: #fff !important;
+    background-image: none !important;
+    color: #000;
+    display: inline-block;
+    font-size: 13px;
+	font-family: Roboto;
+    height: 44px;
+    line-height: 16px;
+    padding: 6px 20px;
+    width: 290px !important;
+}
+.highlightError {
+	border: 1px solid #bb0000;
+}
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item .password-label {
+    position: relative;
+    /* text-align: left; */
+    /* top: 165px; */
+    /* height: 0px; */
+    /* left: 0px; */
+    /* width: 100%; */
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item .password-label #forgotPassword {
+    position: absolute;
+    /* bottom: 21px; */
+	 top: 125px; 
+	left: 2px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+	color: #72a8d0;
+	outline: none!important;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	display: none;
+}
+.forget_pwd a {
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #72a8d0;
+	outline: none!important;
+}
+.forget_pwd a:hover {
+	text-decoration: none;
+	color: #72a8d0;
+}
+.unified_container .login-container .login-panel #api .localAccount .entry .entry-item .password-label #forgotPassword:hover {
+	border: none;
+}
+
+.unified_container .login-container .login-panel #api .localAccount .create p {
+    text-align: left;
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	
+}
+
+.unified_container .login-container .login-panel #api .localAccount .create #createAccount {
+	display: inline-flex;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    color: #fff!important;
+    padding: 14px 30px;
+	background: linear-gradient(to left, #000000 50%, #5e5e5e 50%);
+		background-size: 200% 100%;
+    
+    background-position: right bottom;
+    border: none;
+    cursor: pointer;
+    height: inherit;
+	position: relative;
+    margin-top: -18px;
+    margin-right: 0px;
+    margin-bottom: 1.2rem;
+    margin-left: 0px;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: inherit;
+    -moz-user-select: none;
+    -ms-touch-action: manipulation;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    color: #000;
+    width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* .unified_container .login-container .login-panel #api .localAccount .create a:before { */
+	/* position: absolute; */
+	/* content: ''; */
+	/* width: 100%; */
+	/* height: 13px; */
+	/* outline: none; */
+	/* background: #fff; */
+	/* top: -17px; */
+	/* z-index: 10; */
+/* } */
+
+.unified_container .login-container .login-panel #api .social {
+    position: relative;
+    top: 1px;
+    width: auto;
+    margin-bottom: 19px;
+}
+
+.unified_container .login-container .login-panel #api .social .accountButton {
+    font-size: 16px;
+    height: 45px;
+    width: 223px;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background: #296ec6;
+    color: #fff;
+}
+
+.unified_container .login-container .login-panel #api .social .accountButton:hover {
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: white;
+}
+
+.tabNavigationMobile {
+	display: flex;
+}
+
+.tabNavigationMobile a {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000!important;
+	outline: none;
+	font-family: Roboto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  height: 44px;
+  background: #e0e0e0;
+  cursor: pointer;
+}
+.tabNavigationMobile a.active {
+	border-top: 5px solid #72a8d0;
+	background: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+	.unified_container .login-container .login-panel #api .localAccount .create p {
+		right: -18px!important;
+		max-width: 406px;
+		width: 100%;
+		top: -18px!important;
+	}
+	
+}
+@media (max-width: 767px) {
+	.unified_container .login-container .login-panel #api .localAccount .create p{
+		top: -18px!important;
+		right: -10px!important;
+	}
+}
+@media (max-width: 100%) {
+    .unified_container .login-container .login-panel {
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 550px;
+    }
+    .unified_container .login-container .login-panel .login-section-left {
+        margin-top: 20px;
+    }
+    .unified_container .login-container .login-panel .login-section-left .companyName {
+        display: none;
+    }
+    .unified_container .login-container .login-panel .login-section-left .companyLogo {
+        display: none;
+    }
+    .unified_container .login-container .login-panel .login-section-left h3 {
+        display: none;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api {
+        width: auto;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .social {
+        top: 370px;
+        width: auto;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .social .options .accountButton {
+        height: 40px;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .social .options #FacebookExchange {
+        background-size: 12px;
+        background-position: 50% 75%;
+        margin-bottom: 10px;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .social .options #GoogleExchange {
+        background-size: 20px;
+        background-position: 50% 75%;
+        margin-bottom: 10px;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .social .options #TwitterExchange {
+        background-size: 20px;
+        background-position-x: 56px;
+        background-position-y: 14px;
+        margin-bottom: 10px;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .localAccount {
+        top: 20px;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .localAccount .entry .entry-item {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .localAccount .entry .entry-item .password-label {
+        top: 145px;
+    }
+    .unified_container .login-container .login-panel .login-panel-body #api .localAccount .entry .entry-item #signInName,
+    .unified_container .login-container .login-panel .login-panel-body #api .localAccount .entry .entry-item #logonIdentifier {
+        height: 30px;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .localAccount .entry .entry-item #password {
+        height: 30px;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .localAccount .entry .entry-item:nth-child(2) {
+        width: auto;
+        float: left;
+    }
+    .unified_container .login-container .login-panel .login-section-left #api .localAccount .entry .buttons #next {
+        width: auto;
+        text-indent: -4px;
+        height: 40px;
+        line-height: 0px;
+        position: relative;
+        bottom: 5px;
+        left: 8px;
+    }
+}
+/* .buttons #continue:disabled { */
+    /* margin: 0 auto; */
+    /* width: 60%; */
+    /* height: 50px; */
+    /* background-color: #296ec6; */
+    /* opacity: .3; */
+    /* border-radius: .5rem; */
+    /* border: none; */
+    /* color: #fff; */
+    /* font-size: 1em; */
+/* } */
+
+/* .buttons #continue { */
+    /* margin: 0 auto; */
+    /* width: 60%; */
+    /* height: 50px; */
+    /* background-color: #296ec6; */
+    /* opacity: 1; */
+    /* border-radius: .5rem; */
+    /* border: none; */
+    /* color: #fff; */
+    /* font-size: 1em; */
+    /* box-shadow: 0 0 30px 0 #dae1f7; */
+/* } */
+
+/* .accountButton, .buttons button { */
+    /* background-color: #fff; */
+    /* -moz-border-radius: .5rem; */
+    /* -webkit-border-radius: .5rem; */
+    /* border-radius: .5rem; */
+    /* width: 60%; */
+    /* border: none; */
+    /* font-size: 1em; */
+    /* color: #000; */
+    /* cursor: pointer; */
+    /* margin-top: 10px; */
+    /* margin-right: auto; */
+    /* white-space: normal; */
+    /* box-shadow: 0 2px 10px rgba(0,0,150,.15); */
+/* } */
+@media(min-width: 1025px) {
+	.unified_container .login-container .login-panel #api .localAccount .create p {
+		top: 260px;
+		left: 62%;
+	}
+}
+@media(max-width: 990px) {
+	.unified_container .login-container .login-panel #api .localAccount .create #createAccount {
+		margin-bottom: 0;
+		right: 0;
+		background: #e0e0e0;
+		color: #000!important;
+	}
+	.unified_container .login-container .login-panel #api .localAccount .create p {
+		margin-bottom: 0;
+		padding: 0;
+	}
+	.forget_pwd {
+		width: 100%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.unified_container .login-container .login-panel #api .localAccount .create p a:active {
+		background: #e0e0e0!important;
+		color: #000!important;
+	}
+	.unified_container .login-container .login-panel #api .localAccount .create p a:hover {
+		background: #e0e0e0!important;
+		color: #000!important;
+	}
+}
+@media (max-width: 320px) {
+    .entry {
+		width: 100%;
+	}
+	.unified_container .login-container .login-panel #api .localAccount .entry .entry-item #signInName,
+	.unified_container .login-container .login-panel #api .localAccount .entry .entry-item #logonIdentifier,
+	.unified_container .login-container .login-panel #api .localAccount .entry .entry-item #password {
+		width: 100%!important
+	}
+	.divider h2 {
+		width: 100%;
+	}
+}
+
+@media (min-width: 991px) {
+    .unified_container .login-container .login-panel #api .localAccount .entry .buttons button,
+    .register-button, 
+	.unified_container .login-container .login-panel #api .localAccount .create #createAccount , #signinCta , #attributeVerification .buttons button	{
+        transition: background .5s cubic-bezier(0.215, 0.61, 0.355, 1);
+        display: flex;
+        min-width: 197px;
+		width: 222px;
+    }
+	.login-section-right {
+		display: block;
+	}
+	.unified_container .login-container .login-panel #api .localAccount .entry .entry-item #signInName,
+	.unified_container .login-container .login-panel #api .localAccount .entry .entry-item #logonIdentifier,
+	.unified_container .login-container .login-panel #api .localAccount .entry .entry-item #password {
+		width: 100%!important;
+	}
+	.login-section-left,
+	.login-section-right {
+	padding: 10px 38px 33px 35px;
+	}
+	.create {
+		display: block;
+	}
+	header {
+		position: fixed;
+		height: 87px;
+		z-index: 999;
+		
+	}
+	header img {
+		max-width: 266px;
+		max-height: 60px;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+	.unified_container {
+		padding-top: 168px;
+		padding-bottom: 75px;
+	
+	}
+	html {
+		background: url(https://kortexcluster3.blob.core.windows.net/odysseum/common/images/signinbg.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	.unified_container .login-container .login-panel #api .localAccount .entry .entry-item input[type="checkbox"] + label {
+		right: 13px;
+	}
+	.tabNavigationMobile {
+		display: none;
+	}
+	.login-section-left p {
+		padding: 0;
+	}
+	.divider h2 {
+		width: 312px;
+	}
+	.entry {
+		width: 378px;
+	}
+	
+	.unified_container .login-container .login-panel #api .localAccount .create  {
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+}
+

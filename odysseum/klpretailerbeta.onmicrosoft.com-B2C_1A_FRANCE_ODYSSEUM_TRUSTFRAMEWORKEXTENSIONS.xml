@@ -374,7 +374,7 @@
         </LocalizedResourcesReferences>
       </ContentDefinition>
       <ContentDefinition Id="api.localaccountpasswordreset">
-        <LoadUri>https://b2c-storage-poc.netlify.app</LoadUri>
+        <LoadUri>https://b2c-storage-poc.netlify.app/passwordreset</LoadUri>
         <RecoveryUri>~/common/default_page_error.html</RecoveryUri>
         <DataUri>urn:com:microsoft:aad:b2c:elements:contract:selfasserted:2.0.0</DataUri>
         <Metadata>
